@@ -1,0 +1,7 @@
+{
+  "name": "Sanad - Absher AI Assistant",
+  "description": "A smart AI assistant for the Absher platform providing government services via voice and chat.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

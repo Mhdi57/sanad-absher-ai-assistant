@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+
+@theme {
+    --color-absher: #006c35;
+    --color-absher-dark: #004d26;
+    --color-absher-light: #e6f4ea;
+}
+
+@layer base {
+    body {
+        background-color: var(--color-gray-50);
+        color: var(--color-gray-900);
+        font-family: 'Tajawal', sans-serif;
+    }
+}
+
+@layer utilities {
+
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-absher-dark to-absher;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
